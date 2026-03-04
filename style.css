@@ -1,0 +1,138 @@
+ /* CSS DASAR */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* HEADER & NAV */
+        header {
+            background: #00468b;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1557597774-9d2739f05a76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        
+        .btn-cta {
+            background: #ff4a4a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-cta:hover { background: #e03e3e; }
+
+        /* PRICING TABLE */
+        .container { padding: 50px 10%; }
+        h2 { text-align: center; margin-bottom: 40px; color: #00468b; }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .pricing-table th { background-color: #f4f4f4; }
+        .price-tag { color: #ff4a4a; font-weight: bold; font-size: 1.2rem; }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Sembunyikan nav di mobile untuk kesederhanaan */
+            .pricing-table { font-size: 0.9rem; }
+        }
+
+        /* GALERI EDUKASI */
+.edu-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.edu-card {
+    background: #fff;
+    border-left: 5px solid #00468b;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-radius: 0 10px 10px 0;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.edu-badge {
+    background: #00468b;
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.edu-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.edu-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
